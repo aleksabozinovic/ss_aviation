@@ -1,0 +1,22 @@
+@import url("/styles/general.css");
+
+.hero--section {
+  background-image: url("/images/hero--background.png");
+  height: 100vh;
+  width: 100%;
+}
+.hero--section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.learn--more--button {
+  background: var(--red--color);
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 220px;
+  text-align: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,105 @@
+:root {
+  --yellow--color: #ffcb28;
+  --red--color: #c33024;
+  --dark--blue--color: #001d3d;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+@font-face {
+  font-family: MonumentExtendedBold;
+  src: url("/fonts/MonumentExtended-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+p,
+a {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: MonumentExtendedBold;
+}
+h1 {
+  font-size: 84px;
+  line-height: 125px;
+  color: var(--yellow--color);
+}
+p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+a {
+  font-size: 20px;
+  line-height: 30px;
+}
+.yellow--text {
+  color: var(--yellow--color);
+}
+.container {
+  padding: 0 315px;
+}
+nav {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav--col-2 {
+  display: flex;
+}
+.nav--col-2 li {
+  margin-right: 48px;
+}
+.nav--col-2 li:last-child {
+  margin-right: 0;
+}
+
+.nav--col-2 li a {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: MonumentExtendedBold;
+}
+
+.nav--col-2 li a.active {
+  color: var(--yellow--color);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.nav--col-2 li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 130%;
+  height: 5px;
+  background: var(--yellow--color);
+}

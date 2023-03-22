@@ -1,0 +1,60 @@
+@import url("/styles/general.css");
+
+body {
+  background: var(--dark--blue--color);
+}
+.main__section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+.main__section h1 {
+  margin-bottom: 20px;
+}
+.container {
+  padding: 0 420px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.globe__div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.globe__div p {
+  text-align: justify;
+  margin-right: 30px;
+}
+
+#main__second--yellow {
+  margin-top: 20px;
+}
+
+/* /////////////////// */
+/* Second Section */
+
+.second__section {
+  background: var(--yellow--color);
+  color: #000;
+}
+.second__section .container {
+  padding: 90px 420px;
+}
+.second__section h2 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 75px;
+  margin-bottom: 25px;
+}
+
+.second__section p {
+  text-align: justify;
+}
