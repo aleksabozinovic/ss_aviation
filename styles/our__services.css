@@ -1,0 +1,54 @@
+@import url("/styles/general.css");
+
+.first__section {
+  background-image: url("/images/about__us--background.png");
+  padding-top: 130px;
+  padding-bottom: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first__section h2 {
+  font-size: 38px;
+  line-height: 56px;
+  text-align: justify;
+}
+section .container {
+  padding: 0 380px;
+}
+
+.second__section {
+  background: var(--yellow--color);
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.second__section li {
+  list-style-type: disc;
+  color: #000;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.second__section p {
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.third__section {
+  background: var(--dark--blue--color);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.third__section h3 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+.third__section p {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  margin-top: 30px;
+}

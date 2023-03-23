@@ -1,0 +1,35 @@
+@import url("/styles/general.css");
+
+.main__section {
+  background: var(--dark--blue--color);
+  padding-top: 180px;
+  padding-bottom: 80px;
+}
+.question {
+  margin-bottom: 25px;
+}
+.question:last-child {
+  margin-bottom: 0;
+}
+.question h2 {
+  margin-left: 10px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+}
+.in__question--div {
+  display: flex;
+  padding-left: 30px;
+}
+
+.in__question--div p {
+  text-align: justify;
+  font-size: 22px;
+  line-height: 30px;
+}
+.answer {
+  list-style: disc;
+  font-size: 20px;
+  margin-right: 20px;
+}
