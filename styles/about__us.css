@@ -15,23 +15,29 @@ body {
 .main__section h1 {
   margin-bottom: 20px;
 }
-.container {
-  padding: 0 420px;
+section .container {
+  padding: 0 380px;
 }
 
 p {
   font-size: 22px;
   line-height: 30px;
+  text-align: justify;
 }
 
 .globe__div {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 .globe__div p {
   text-align: justify;
   margin-right: 30px;
+  width: 630px;
+}
+.globe__div img {
+  width: 30%;
 }
 
 #main__second--yellow {
@@ -46,7 +52,8 @@ p {
   color: #000;
 }
 .second__section .container {
-  padding: 90px 420px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .second__section h2 {
   text-align: center;
@@ -57,4 +64,91 @@ p {
 
 .second__section p {
   text-align: justify;
+}
+@media screen and (max-width: 1600px) {
+  section .container {
+    padding: 0 315px;
+  }
+  .globe__div img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  section .container {
+    padding: 0 180px;
+  }
+  .globe__div img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1230px) {
+  section .container {
+    padding: 0 140px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section .container {
+    padding: 0 75px;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .globe__div img {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .container {
+    padding: 0 30px;
+  }
+  .globe__div p {
+    margin-right: 0;
+    width: 100%;
+  }
+  .globe__div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .globe__div img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .main__section h1 {
+    margin-bottom: 10px;
+  }
+  section .container {
+    padding: 0 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .globe__div img {
+    width: 90%;
+  }
+  .second__section h2 {
+    font-size: 36px;
+    line-height: 55px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .main__section {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+  .second__section .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

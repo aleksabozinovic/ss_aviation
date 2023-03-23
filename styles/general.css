@@ -2,6 +2,7 @@
   --yellow--color: #ffcb28;
   --red--color: #c33024;
   --dark--blue--color: #001d3d;
+  --dark--gray--color: #1c1c1c;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
@@ -102,4 +103,81 @@ nav .container {
   width: 130%;
   height: 5px;
   background: var(--yellow--color);
+}
+
+/* Footer */
+
+footer {
+  background: var(--dark--gray--color);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer ul {
+  display: flex;
+}
+footer ul li {
+  margin-right: 40px;
+}
+footer ul li:last-child {
+  margin-right: 0;
+}
+footer ul a {
+  font-size: 14px;
+}
+footer p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1140px) {
+  footer ul li {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 0 75px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+  footer ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  footer ul li {
+    margin-right: 0;
+  }
+  .footer__rights {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .nav--col-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
 }
