@@ -27,6 +27,7 @@
   text-align: center;
   margin-top: 30px;
 }
+
 @media screen and (max-width: 1525px) {
   .hero--section .container,
   nav .container {

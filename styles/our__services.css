@@ -52,3 +52,35 @@ section .container {
   text-align: justify;
   margin-top: 30px;
 }
+@media screen and (max-width: 1440px) {
+  section .container {
+    padding: 0 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section .container {
+    padding: 0 30px;
+  }
+  .first__section h2 {
+    text-align: left;
+  }
+  .first__section h2,
+  .third__section h3 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 425px) {
+  section .container {
+    padding: 0 10px;
+  }
+  .first__section h2,
+  .third__section h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .second__section li {
+    margin-left: 20px;
+  }
+}

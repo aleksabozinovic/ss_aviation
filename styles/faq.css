@@ -2,7 +2,7 @@
 
 .main__section {
   background: var(--dark--blue--color);
-  padding-top: 180px;
+  padding-top: 130px;
   padding-bottom: 80px;
 }
 .question {
@@ -32,4 +32,34 @@
   list-style: disc;
   font-size: 20px;
   margin-right: 20px;
+}
+section .container {
+  padding: 0 380px;
+}
+@media screen and (max-width: 1440px) {
+  section .container {
+    padding: 0 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section .container {
+    padding: 0 30px;
+  }
+  .question h2 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 425px) {
+  section .container {
+    padding: 0 10px;
+  }
+  .question h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .in__question--div p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
