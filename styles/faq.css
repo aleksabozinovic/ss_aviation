@@ -23,7 +23,8 @@
   padding-left: 30px;
 }
 
-.in__question--div p {
+.in__question--div p,
+.in__question--div p a {
   text-align: justify;
   font-size: 22px;
   line-height: 30px;
@@ -58,7 +59,8 @@ section .container {
     font-size: 18px;
     line-height: 28px;
   }
-  .in__question--div p {
+  .in__question--div p,
+  .in__question--div p a {
     font-size: 16px;
     line-height: 24px;
   }
